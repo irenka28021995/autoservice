@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+    {% load static %}
+{%block title%}
+
+{%endblock %}
+{%block body%}
+
+<div class="form_create text">
+        <h1>Редактировать заявку</h1>
+        <form method="post" class="form">
+            {% csrf_token %}
+            {{ form.ClientName }}
+            {{ form.ClientPhone }}
+            {{ form.ClientCar }}
+     <button type="submit" class="button">Редактировать</button>
+        </form>
+        <a href="update" class="menu__item">Вставить старые данные</a>
+    </div>
+{%endblock%}
+

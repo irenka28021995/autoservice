@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "serviceauto"
+version = "0.1.0"
+description = ""
+authors = ["irenka28021995 <irenka28021995@yandex.by>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+prompt = "^0.4.1"
+pytest = "^7.4.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

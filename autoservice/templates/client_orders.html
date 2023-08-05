@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+    {% load static %}
+{%block title%}
+{%endblock %}
+{%block body%}
+
+
+    <div class="category">
+        {% for el in clients%}
+
+            <div class="product">
+                    <p>Идентификатор: № {{el.ClientId}} </p>
+                    <p>Имя: {{el.ClientName}}</p>
+                    <p>Телефон:{{el.ClientPhone}} </p>
+                    <p>Автомобиль:{{el.ClientCar}} </p>
+                    <p>Дата добавления:{{el.time_create}} </p>
+                    <p>Дата редактирования: {{el.time_update}}</p>
+                    <div class="category">
+                     <form action="/{{el.ClientId}}/delete" method="POST" class="form">
+                        {%csrf_token%}
+                        <button type="submit" class="button">Удалить</button>
+                        </form>
+                         <form action="/{{el.ClientId}}/update" method="POST" class="form">
+                            {% csrf_token %}
+                            <button type="submit" class="button">Редактировать</button>
+                        </form>
+                    </div>
+            </div>
+{%endfor%}
+    </div>
+{%endblock%}
+
+
+

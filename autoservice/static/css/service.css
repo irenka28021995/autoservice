@@ -1,0 +1,159 @@
+body { background:url("/static/img/55.jpg") no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+
+.beauty-rotate{
+ filter: grayscale(1); /* Черно-белый фильтр для изображения */
+    transition: 1s; /* Время изменения цвета изображения */
+    display: inline-block;
+  overflow: hidden; /* Скрываем всё за контуром */
+
+}
+.beauty-rotate:hover {
+filter: grayscale(0); /* Цветное изображение при наведении */
+ transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+
+
+p{
+font-weight: 700;
+}
+
+.container {
+    max-width: 1090px;
+    margin: 0px auto;
+}
+
+
+.container {
+    max-width: 1090px;
+    margin: 0px auto;
+}
+/*-------ШАПКА---------------------------------------------------*/
+
+
+-------КОНТЕНТ---------------------------------------------------*/
+.content {
+    padding-top: 40px;
+}
+
+
+
+
+img {
+    width: 100%;
+    height: 186px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: contain;
+
+
+}
+
+
+.menu__item {
+        display: block;
+        padding: 12px 24px;
+
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        transition-duration: .3s;
+    }
+.form {
+  margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.form_create {
+    padding-top: 30px;
+    max-width: 600px;
+}
+
+.text_input {
+    font-size: 35px;
+    display: block;
+    line-height: revert;
+    padding-left: 15px;
+    font-family: Montserrat;
+    appearance: none;
+    margin-bottom: 1px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+
+.text textarea {
+    font-family: Montserrat;
+    font-size: 20px;
+    display: block;
+    line-height: 1.5;
+    padding-left: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.text textarea:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.button {
+    background: #ff7b47;
+    border-radius: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: white;
+    padding: 5px 50px;
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px 0px;
+    transition: .4s;
+    max-width: 200px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.text_input {
+    font-size: 35px;
+    display: block;
+    line-height: 1.5;
+    padding-left: 10px;
+    font-family: Montserrat;
+    appearance: none;
+    margin-bottom: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.product {
+    width: 480px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: #999fa363;
+    margin: 30px;
+}
+
+.product > p {
+    padding-left: 10px;
+}
+.product > a {
+    text-decoration: none;
+    margin: 20px;
+}
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+

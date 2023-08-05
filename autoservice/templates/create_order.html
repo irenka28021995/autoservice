@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+    {% load static %}
+{%block title%}
+Оставить заявку
+{%endblock %}
+{%block body%}
+     <div class="form_create text">
+        <h1>Оформить заявку</h1>
+        <form method="post" class="form">
+           {% csrf_token %}
+           {{ form.ClientName }}<br>
+           {{ form.ClientPhone }}<br>
+           {{ form.ClientCar }}<br>
+            <button type="submit" class="button">Добавить</button>
+        </form>
+    </div>
+{%endblock %}
